@@ -1,0 +1,134 @@
+/* Importing Google Fonts onto CSS */
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Sans+3:ital,wght@0,200;1,200&display=swap');
+
+/* Applying the font to the entire body */
+body {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 400; /* Thin weight */
+    background-color: #FAFAFA; 
+    font-size: 20px;
+}
+
+/* Styling headers */
+h1 {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 200; /* Normal weight */
+    font-size: 20;
+}
+   
+h2 {
+        font-family: "Host Grotesk", sans-serif;
+        font-weight: 400; /* Normal weight */
+        font-size: 20;
+}
+
+/* Styling navigation bar */
+.navigationbar {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    align-items: center;    /* Optional: Align items vertically */
+    width: 100%;            /* Ensure it spans the full width of the container */
+    overflow: hidden;
+    margin: 0 auto;         /* Center the navigation bar itself */
+}
+
+.navigationbar a {
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigationbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navigationbar a.split {
+    color: #333;
+}
+
+/* Styling about me paragraph */
+.aboutmep {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 300;
+    text-align: left; /* Aligns the text to the left */
+    max-width: 60%; /* Controls the width of the paragraph */
+    margin-right: 20px; /* Adds space between the paragraph and image */ 
+    margin-top: 80px;
+}
+
+/* Styling rotating name container */
+.hello {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 200;
+    font-size: 26px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.rotatingname {
+    display: flex;
+    align-items: center;
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 200;
+    font-size: 26px;
+    color: #333;
+    gap: 0px;
+    position: relative;
+    height: 40px; /* Set height to avoid shifting */
+    overflow: hidden; /* Prevent content overflow during rotation */
+    margin-top: 60px;
+}
+
+/* Assigning colors to names in rotating name */
+.name1 {
+    color: #333;
+}
+
+.name2 {
+    color:#FFC300;
+}
+
+.name3 {
+    color: #D72638;
+}
+
+.name4 {
+    color: #87CEEB; 
+}
+
+/* Imported for GPT - Rotating text styles */
+.letter {
+    display: inline-block;
+    transform-origin: center center 25px;
+    opacity: 0;
+    transform: rotateX(0deg);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.letter.in {
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+.letter.out {
+    transform: rotateX(90deg);
+    opacity: 0;
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+    opacity: 0;
+}
+/*Styling image of Jedidah*/
+
+.ImageJedi{
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin-left: 70%; /* Pushes the image to the right */
+    margin-right: auto; /* Centers the image by equally distributing space on both sides */
+    width: 20%; /* Adjust the width as needed */
+    margin-top: -350px; /*Moving it up*/
+}
