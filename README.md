@@ -1,2 +1,2 @@
 # JedidahPW
-Personal website started in Novemeber '24 
+Personal website started in November '24 
